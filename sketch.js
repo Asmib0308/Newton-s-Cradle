@@ -69,8 +69,6 @@ function draw() {
   fill("white")
   text("A = Red Bob",20,590);
   text("S = Orange Bob",20,620);
-  text("Right arrow = Yellow Bob (right)",20,650);
-  text("Left arrow = Yellow Bob(left)",20,680);
   text("D = Green Bob",20,710);
   text("F = Blue Bob",20,740);
 
@@ -89,13 +87,6 @@ function keyPressed(){
 	if (keyCode === 83 ) {
 		Matter.Body.applyForce(bob2.body, bob2.body.position, {x: -650,y: -650})
 	  }
-	else 
-	if(keyCode === 37 ) {
-		Matter.Body.applyForce(bob3.body, bob3.body.position, {x: -650,y: -650})
-	} 
-	if(keyCode === 39 ) {
-		Matter.Body.applyForce(bob3.body, bob3.body.position, {x: 650,y: -650})
-	}  
 	else
 	if(keyCode === 68 ) {
 		Matter.Body.applyForce(bob4.body, bob4.body.position, {x: 650,y: -650})
